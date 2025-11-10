@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Manrope", sans-serif;
+  @apply bg-[#00070E] text-white;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
