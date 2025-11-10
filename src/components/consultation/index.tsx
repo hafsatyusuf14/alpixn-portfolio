@@ -4,12 +4,12 @@ import consultation from "../../../public/images/works/consultation.webp";
 
 export const Consultation = () => {
   return (
-    <section className="w-full bg-[#0b0b0b] py-10">
+    <section className="w-full bg-[#0b0b0b] ">
       <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10">
-        {/* Left side: text content */}
+        {/* Left side */}
         <div
-          className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left gap-5 
-          m-5 sm:m-8 md:m-10 lg:pl-[50px] lg:py-[50px] lg:m-0"
+          className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left gap-5 
+    m-5 sm:m-8 md:m-10 lg:pl-[50px] lg:py-[50px] lg:m-0"
         >
           <p className="text-white font-bold text-[18px] sm:text-[20px] lg:text-[40px]">
             Improve your business and make your work easy
@@ -26,8 +26,8 @@ export const Consultation = () => {
         </div>
 
         {/* Right side: image */}
-        <div className="flex-1 flex justify-center w-full">
-          <div className="relative w-[90%] sm:w-[80%] lg:w-full h-[250px] sm:h-[350px] lg:h-[450px]">
+        <div className="w-full lg:w-1/2 flex justify-center">
+          <div className="relative w-full h-[250px] sm:h-[350px] lg:h-[478px]">
             <Image
               src={consultation}
               alt="Consultation"
