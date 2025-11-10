@@ -10,7 +10,7 @@ interface CardProps {
 export const Card = ({ image, title, subtitle, className }: CardProps) => {
   return (
     <div
-      className={` h-auto sm:h-[442px] bg-[#0b0b0b] rounded-[10px] overflow-hidden shadow-lg transition-transform duration-300 hover:scale-[1.02] flex flex-col  border-[0.5px] border-[#538bc0] bg-[linear-gradient(90deg,rgba(56,158,255,1)_0%,rgba(45,111,175,1)_0%,rgba(33,62,91,1)_0%,rgba(24,24,24,1)_53%)]
+      className={` h-auto  bg-[#0b0b0b] rounded-[10px] overflow-hidden shadow-lg transition-transform duration-300 hover:scale-[1.02] flex flex-col  border-[0.5px] border-[#538bc0] bg-[linear-gradient(90deg,rgba(56,158,255,1)_0%,rgba(45,111,175,1)_0%,rgba(33,62,91,1)_0%,rgba(24,24,24,1)_53%)]
  ${className || ""}`}
     >
       {/* Image Area*/}
@@ -37,7 +37,7 @@ export const Card = ({ image, title, subtitle, className }: CardProps) => {
           <h3
             className="
               font-medium mb-2
-              text-[16px] sm:text-[16px] md:text-[18px] lg:text-[24px]
+              text-[16px] sm:text-[16px] md:text-[18px] lg:text-[24px] text-fit
             "
           >
             {title}
