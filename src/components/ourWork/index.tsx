@@ -289,6 +289,162 @@ export const OurWork = () => {
                 </div>
               </div>
             </section>
+            {/* ------------------- Results Section ------------------- */}
+            <section className="flex flex-col lg:flex-row justify-between gap-6 mt-16">
+              {/* Left Side */}
+              <div className="w-full lg:w-3/5">
+                <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold mb-4">
+                  Results
+                </h2>
+              </div>
+
+              {/* Right Side */}
+              <div className="w-full lg:w-2/5 flex flex-col justify-start">
+                {/* Top Numbers with Labels */}
+                <div className="flex justify-between text-center mb-6">
+                  {/* Left Metric */}
+                  <div>
+                    <p className="text-[#389EFF] font-bold text-[40px] sm:text-[50px] lg:text-[60px] leading-none">
+                      71.4%
+                    </p>
+                    <p className="text-gray-300 text-sm sm:text-base lg:text-[18px] mt-1">
+                      Conversion Increase
+                    </p>
+                  </div>
+
+                  {/* Right Metric */}
+                  <div>
+                    <p className="text-[#389EFF] font-bold text-[40px] sm:text-[50px] lg:text-[60px] leading-none">
+                      342.4%
+                    </p>
+                    <p className="text-gray-300 text-sm sm:text-base lg:text-[18px] mt-1">
+                      Revenue Increase
+                    </p>
+                  </div>
+                </div>
+
+                {/* Bulleted Results */}
+                <ul className="list-disc list-outside pl-5 space-y-2 text-gray-300 text-sm sm:text-base lg:text-[18px]">
+                  <li>
+                    Within five months, website traffic surged by 60%, with a
+                    significant drop in bounce rates.
+                  </li>
+                  <li>
+                    Conversion rates improved by 35%, reflecting increased sales
+                    and customer retention.
+                  </li>
+                  <li>
+                    Social media profiles grew by 25% in followers, with higher
+                    engagement rates, especially in post-interaction and story
+                    views.
+                  </li>
+                </ul>
+              </div>
+            </section>
+            {/* ------------------- Meet Our Team Section ------------------- */}
+            <section className="my-20 text-center">
+              {/* Section Heading */}
+              <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold mb-10">
+                Meet Our Team
+              </h2>
+
+              {/* Team Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-items-center">
+                {/* Team Member 1 */}
+                <div className="flex flex-col items-center">
+                  <div className="relative w-[180px] h-[180px] rounded-full overflow-hidden mb-4">
+                    <Image
+                      src="/images/team1.jpg" // replace with your image path
+                      alt="Team Member 1"
+                      fill
+                      className="object-cover rounded-full"
+                    />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-semibold">
+                    Aisha Bello
+                  </h3>
+                  <p className="text-gray-400 text-sm sm:text-base mb-2">
+                    Creative Director
+                  </p>
+                  <p className="text-xl">💡✨</p>
+                </div>
+
+                {/* Team Member 2 */}
+                <div className="flex flex-col items-center">
+                  <div className="relative w-[180px] h-[180px] rounded-full overflow-hidden mb-4">
+                    <Image
+                      src="/images/team2.jpg"
+                      alt="Team Member 2"
+                      fill
+                      className="object-cover rounded-full"
+                    />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-semibold">
+                    David Johnson
+                  </h3>
+                  <p className="text-gray-400 text-sm sm:text-base mb-2">
+                    Marketing Lead
+                  </p>
+                  <p className="text-xl">📈🔥</p>
+                </div>
+
+                {/* Team Member 3 */}
+                <div className="flex flex-col items-center">
+                  <div className="relative w-[180px] h-[180px] rounded-full overflow-hidden mb-4">
+                    <Image
+                      src="/images/team3.jpg"
+                      alt="Team Member 3"
+                      fill
+                      className="object-cover rounded-full"
+                    />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-semibold">
+                    Fatima Yusuf
+                  </h3>
+                  <p className="text-gray-400 text-sm sm:text-base mb-2">
+                    Frontend Developer
+                  </p>
+                  <p className="text-xl">💻🎨</p>
+                </div>
+
+                {/* Team Member 4 */}
+                <div className="flex flex-col items-center">
+                  <div className="relative w-[180px] h-[180px] rounded-full overflow-hidden mb-4">
+                    <Image
+                      src="/images/team4.jpg"
+                      alt="Team Member 4"
+                      fill
+                      className="object-cover rounded-full"
+                    />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-semibold">
+                    Ibrahim Musa
+                  </h3>
+                  <p className="text-gray-400 text-sm sm:text-base mb-2">
+                    UI/UX Designer
+                  </p>
+                  <p className="text-xl">🎨💭</p>
+                </div>
+              </div>
+            </section>
+            <section className="my-20 ">
+              {/* Section Heading */}
+              <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold mb-10 text-center">
+                View More Projects
+              </h2>
+
+              {/* Projects Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                {works.slice(0, 3).map((work) => (
+                  <Card
+                    key={work.id}
+                    image={work.image}
+                    title={work.title}
+                    subtitle={work.subtitle}
+                  />
+                ))}
+              </div>
+            </section>
           </div>
         </motion.section>
       )}
