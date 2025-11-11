@@ -8,6 +8,10 @@ import computer1 from "../../../public/images/works/computer-1.webp";
 import computer2 from "../../../public/images/works/computer-2.webp";
 import computer3 from "../../../public/images/works/computer-3.webp";
 import computer4 from "../../../public/images/works/computer-4.webp";
+import Amith from "../../../public/images/team/amith.webp";
+import karan from "../../../public/images/team/karan.webp";
+import anna from "../../../public/images/team/anna.webp";
+import sneh from "../../../public/images/team/sneh.webp";
 
 export const OurWork = () => {
   const [selectedWork, setSelectedWork] = useState<
@@ -264,17 +268,17 @@ export const OurWork = () => {
                 <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold mb-6">
                   Problems
                 </h2>
-                <ol className="list-decimal list-inside space-y-4 text-sm sm:text-base lg:text-[20px]">
+                <ol className="list-decimal list-outside pl-6 space-y-4 text-sm sm:text-base lg:text-[24px]">
                   <li>
                     <strong>Low Conversion & High Bounce Rate:</strong>
-                    <p className="mt-1">
+                    <p className="mt-1 lg:text-[20px]">
                       Difficulty turning visitors into paying customers due to
                       poor navigation, unclear CTAs, and slow load times.
                     </p>
                   </li>
                   <li>
                     <strong>Weak Online Presence:</strong>
-                    <p className="mt-1">
+                    <p className="mt-1 lg:text-[20px]">
                       Limited visibility on search engines and inconsistent
                       content updates made it hard for customers to find
                       products.
@@ -282,7 +286,7 @@ export const OurWork = () => {
                   </li>
                   <li>
                     <strong>Poor Social Media Engagement:</strong>
-                    <p className="mt-1">
+                    <p className="mt-1 lg:text-[20px]">
                       Irregular posting, lack of visually appealing content, and
                       absence of strategy led to low interaction and minimal
                       brand awareness.
@@ -296,13 +300,13 @@ export const OurWork = () => {
             {/* Solutions */}
             <div className="flex flex-col lg:flex-row gap-6">
               <div className="w-full lg:w-3/5">
-                <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold mb-2">
+                <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold mb-6">
                   Solutions
                 </h2>
-                <ol className="list-decimal list-inside space-y-4 text-sm sm:text-base lg:text-[20px]">
+                <ol className="list-decimal list-outside pl-6 space-y-4 text-sm sm:text-base lg:text-[24px]">
                   <li>
                     <strong>SEO Optimization:</strong>
-                    <p className="mt-1">
+                    <p className="mt-1 lg:text-[20px]">
                       Revamped website content and structure, performed SEO
                       audit, optimized metadata and product descriptions,
                       implemented internal linking.
@@ -310,14 +314,14 @@ export const OurWork = () => {
                   </li>
                   <li>
                     <strong>Content Marketing:</strong>
-                    <p className="mt-1">
+                    <p className="mt-1 lg:text-[20px]">
                       Launched fashion blog with SEO optimized content, promoted
                       via newsletters to drive repeat traffic.
                     </p>
                   </li>
                   <li>
                     <strong>Social Media Campaigns:</strong>
-                    <p className="mt-1">
+                    <p className="mt-1 lg:text-[20px]">
                       Created visually compelling ads, scheduled posts and
                       stories, partnered with influencers to broaden reach.
                     </p>
@@ -434,17 +438,17 @@ export const OurWork = () => {
                 <div className="flex flex-col items-center">
                   <div className="relative w-[180px] h-[180px] rounded-full overflow-hidden mb-4">
                     <Image
-                      src="/images/team1.jpg" // replace with your image path
+                      src={Amith}
                       alt="Team Member 1"
                       fill
                       className="object-cover rounded-full"
                     />
                   </div>
                   <h3 className="text-lg sm:text-xl font-semibold">
-                    Aisha Bello
+                    Amith Jay
                   </h3>
                   <p className="text-gray-400 text-sm sm:text-base mb-2">
-                    Creative Director
+                    UI/UX Designer (Lead)
                   </p>
                   <p className="text-xl">💡✨</p>
                 </div>
@@ -453,17 +457,17 @@ export const OurWork = () => {
                 <div className="flex flex-col items-center">
                   <div className="relative w-[180px] h-[180px] rounded-full overflow-hidden mb-4">
                     <Image
-                      src="/images/team2.jpg"
+                      src={karan}
                       alt="Team Member 2"
                       fill
                       className="object-cover rounded-full"
                     />
                   </div>
                   <h3 className="text-lg sm:text-xl font-semibold">
-                    David Johnson
+                    Karan Sharma
                   </h3>
                   <p className="text-gray-400 text-sm sm:text-base mb-2">
-                    Marketing Lead
+                    Digital Marketing Analyst
                   </p>
                   <p className="text-xl">📈🔥</p>
                 </div>
@@ -472,17 +476,17 @@ export const OurWork = () => {
                 <div className="flex flex-col items-center">
                   <div className="relative w-[180px] h-[180px] rounded-full overflow-hidden mb-4">
                     <Image
-                      src="/images/team3.jpg"
+                      src={anna}
                       alt="Team Member 3"
                       fill
                       className="object-cover rounded-full"
                     />
                   </div>
                   <h3 className="text-lg sm:text-xl font-semibold">
-                    Fatima Yusuf
+                    Anna Bhattacharya
                   </h3>
                   <p className="text-gray-400 text-sm sm:text-base mb-2">
-                    Frontend Developer
+                    Content Strategist
                   </p>
                   <p className="text-xl">💻🎨</p>
                 </div>
@@ -491,17 +495,17 @@ export const OurWork = () => {
                 <div className="flex flex-col items-center">
                   <div className="relative w-[180px] h-[180px] rounded-full overflow-hidden mb-4">
                     <Image
-                      src="/images/team4.jpg"
+                      src={sneh}
                       alt="Team Member 4"
                       fill
                       className="object-cover rounded-full"
                     />
                   </div>
                   <h3 className="text-lg sm:text-xl font-semibold">
-                    Ibrahim Musa
+                    Snehashri S
                   </h3>
                   <p className="text-gray-400 text-sm sm:text-base mb-2">
-                    UI/UX Designer
+                    Social Media Manager{" "}
                   </p>
                   <p className="text-xl">🎨💭</p>
                 </div>
