@@ -186,83 +186,173 @@ export const OurWork = () => {
                 </p>
 
                 <ul className="list-disc list-outside pl-5 space-y-2 text-lg lg:text-[20px]">
-                  <li>Low conversion rates with a high bounce rate.</li>
-                  <li>Minimal online presence compared to competitors.</li>
-                  <li>Ineffective engagement on social media platforms.</li>
-                  <li>Enhance brand visibility on social media.</li>
-                  <li>Scheduled posts and engaging stories.</li>
+                  <li>
+                    Low conversion rates with a high bounce rate on their
+                    website.
+                  </li>
+
+                  <li>
+                    {" "}
+                    Minimal online presence compared to competitors, resulting
+                    in missed sales opportunities.
+                  </li>
+                  <li>
+                    Ineffective engagement on social media platforms, leading to
+                    low brand awareness and customer interaction.
+                  </li>
+                  <li>Enhance brand visibility on social media platforms.</li>
+                  <li>
+                    Scheduled regular posts and engaging stories to keep the
+                    audience informed and entertained.
+                  </li>
                 </ul>
               </div>
             </div>
 
-            {/* Objectives + Sticky Right Image */}
-            <div className="flex flex-col lg:flex-row gap-6">
-              <div className="w-full lg:w-3/5 flex flex-col gap-4">
-                <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold">
-                  Objectives
-                </h2>
-                <p className="text-sm sm:text-base lg:text-[20px] font-normal lg:my-6">
-                  The primary focus was to boost Trendy Apparel Co.’s digital
-                  performance and online visibility. The goal was to attract
-                  more qualified visitors, improve conversion efficiency, and
-                  establish a stronger social presence to drive brand loyalty
-                  and sales growth.
-                </p>
-                <ul className="list-disc list-outside pl-5 space-y-2 text-lg lg:text-[20px]">
-                  <li>
-                    Drive a 50% increase in website traffic within 6 months.
-                  </li>
-                  <li>Boost online sales conversion rate by 30%.</li>
-                  <li>
-                    Enhance brand visibility across social media platforms.
-                  </li>
-                  <li>Strengthen customer engagement consistently.</li>
-                </ul>
+            {/* OBJECTIVES + PROBLEMS + SOLUTIONS + STICKY BOX */}
+            <section className="flex flex-col lg:flex-row gap-6">
+              <div className="w-full lg:w-3/5 flex flex-col gap-20">
+                {/* OBJECTIVES */}
+                <div>
+                  <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold">
+                    Objectives
+                  </h2>
+                  <p className="text-sm sm:text-base lg:text-[20px] font-normal lg:my-6">
+                    The primary focus was to boost Trendy Apparel Co.’s digital
+                    performance and online visibility. The goal was to attract
+                    more qualified visitors, improve conversion efficiency, and
+                    establish a stronger social presence to drive brand loyalty
+                    and sales growth.
+                  </p>
+                  <ul className="list-disc list-outside pl-5 space-y-2 text-lg lg:text-[20px]">
+                    <li>
+                      Drive a 50% increase in website traffic within six months.
+                    </li>
+                    <li>
+                      Boost online sales conversion rate by 30% through better
+                      UX and marketing alignment.
+                    </li>
+                    <li>
+                      Enhance brand visibility across key social media
+                      platforms.
+                    </li>
+                    <li>
+                      Strengthen customer engagement through creative content
+                      and consistent online activity.
+                    </li>
+                  </ul>
+                </div>
+
+                {/* PROBLEMS */}
+                <div>
+                  <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold mb-6">
+                    Problems
+                  </h2>
+                  <ol className="list-decimal list-outside pl-6 space-y-4 text-sm sm:text-base lg:text-[24px]">
+                    <li>
+                      <strong>Low Conversion & High Bounce Rate:</strong>
+                      <p className="mt-1 lg:text-[20px]">
+                        Trendy Apparel Co. faced difficulty in turning website
+                        visitors into paying customers. Despite an attractive
+                        product range, the website suffered from poor
+                        navigation, unclear CTAs, and slow load times, resulting
+                        in a high bounce rate and missed revenue opportunities.
+                      </p>
+                    </li>
+                    <li>
+                      <strong>Weak Online Presence:</strong>
+                      <p className="mt-1 lg:text-[20px]">
+                        The brand struggled to stand out in the competitive
+                        online fashion market. Limited visibility on search
+                        engines and inconsistent content updates made it
+                        difficult for potential customers to discover their
+                        products.
+                      </p>
+                    </li>
+                    <li>
+                      <strong>Poor Social Media Engagement:</strong>
+                      <p className="mt-1 lg:text-[20px]">
+                        Although the target audience was active on social media,
+                        Trendy Apparel Co. failed to engage them effectively.
+                        Irregular posting, lack of visually appealing content,
+                        and absence of a clear strategy led to low interaction
+                        and minimal brand awareness.
+                      </p>
+                    </li>
+                  </ol>
+                </div>
+
+                {/* SOLUTIONS */}
+                <div>
+                  <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold mb-6">
+                    Solutions
+                  </h2>
+                  <ol className="list-decimal list-outside pl-6 space-y-4 text-sm sm:text-base lg:text-[24px]">
+                    <li>
+                      <strong>SEO Optimization:</strong>
+                      <p className="mt-1 lg:text-[20px]">
+                        Revamped the website content and structure for better
+                        search engine rankingsPerformed a comprehensive SEO
+                        audit to identify technical issues affecting search
+                        rankings. Enhanced metadata, and optimized product
+                        descriptions with relevant keywords. Implemented an
+                        internal linking strategy to improve user navigation and
+                        decrease bounce rates.
+                      </p>
+                    </li>
+                    <li>
+                      <strong>Content Marketing:</strong>
+                      <p className="mt-1 lg:text-[20px]">
+                        Launched a fashion-focused blog addressing audience
+                        interests such as style tips and trend forecasts.
+                        Optimized blog content for SEO with targeted keywords
+                        and engaging headlines. Promoted content through
+                        newsletters to drive repeat traffic.
+                      </p>
+                    </li>
+                    <li>
+                      <strong>Social Media Campaigns:</strong>
+                      <p className="mt-1 lg:text-[20px]">
+                        Designed visually compelling ads for Instagram and
+                        Facebook targeting fashion-conscious demographics.
+                        Scheduled regular posts and engaging stories to keep the
+                        audience informed and entertained. Utilized influencer
+                        partnerships to broaden reach and amplify brand
+                        presence.
+                      </p>
+                    </li>
+                  </ol>
+                </div>
               </div>
-              <div className="w-full lg:w-2/5 bg-linear-to-b from-[#002348] via-[#00141F] to-[#002348] border border-[#2a3f57] rounded-[10px] px-6 py-7 text-white shadow-[0_0_20px_rgba(56,158,255,0.25)] lg:sticky lg:top-20">
+
+              {/* STICKY ABOUT THE PROJECT BOX */}
+              <div className="w-full relative lg:w-2/5 bg-linear-to-b from-[#002348] via-[#00141F] to-[#002348] border border-[#2a3f57] rounded-[10px] px-6 py-7 text-white shadow-[0_0_20px_rgba(56,158,255,0.25)] lg:sticky lg:top-0 lg:h-max">
                 <h3 className="text-xl font-semibold mb-3">
                   About The Project
                 </h3>
-
-                {/* Divider line */}
                 <div className="h-px bg-[#2a3f57] mb-4"></div>
-
-                {/* Industry */}
                 <p className="text-base mb-4">
-                  <span className="font-semibold lg:text-[16px]">
-                    Industry:
-                  </span>
+                  <span className="font-semibold">Industry:</span>
                   <br />
-                  <span className="lg:text-16px] font-normal">
-                    {" "}
-                    Fashion &amp; E-Commerce
-                  </span>
+                  <span className="font-normal">Fashion & E-Commerce</span>
                 </p>
-
-                {/* Services Provided */}
-                <p className="font-semibold lg:text-[16px] mb-2">
-                  Services Provided:
-                </p>
+                <p className="font-semibold mb-2">Services Provided:</p>
                 <div className="flex flex-wrap gap-4 mb-6">
                   {[
                     "UI/UX Design",
                     "Social Media Strategy",
                     "Website Redesign",
                     "Conversion Optimization",
-                  ].map((service, i) => (
+                  ].map((s, i) => (
                     <div
                       key={i}
                       className="border border-[#2a3f57] rounded-lg p-3 text-sm lg:text-[16px]"
                     >
-                      {service}
+                      {s}
                     </div>
                   ))}
                 </div>
-
-                {/* Technologies Used */}
-                <p className="font-semibold lg:text-[16px] mb-2">
-                  Technologies Used:
-                </p>
+                <p className="font-semibold mb-2">Technologies Used:</p>
                 <div className="flex flex-wrap gap-4">
                   {[
                     "Meta Business Suite",
@@ -270,86 +360,17 @@ export const OurWork = () => {
                     "Figma",
                     "Webflow",
                     "Adobe Illustrator",
-                  ].map((tech, i) => (
+                  ].map((t, i) => (
                     <div
                       key={i}
                       className="border border-[#2a3f57] rounded-lg p-3 lg:text-[16px] text-sm"
                     >
-                      {tech}
+                      {t}
                     </div>
                   ))}
                 </div>
               </div>
-            </div>
-
-            {/* Problems */}
-            <div className="flex flex-col lg:flex-row gap-6">
-              <div className="w-full lg:w-3/5">
-                <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold mb-6">
-                  Problems
-                </h2>
-                <ol className="list-decimal list-outside pl-6 space-y-4 text-sm sm:text-base lg:text-[24px]">
-                  <li>
-                    <strong>Low Conversion & High Bounce Rate:</strong>
-                    <p className="mt-1 lg:text-[20px]">
-                      Difficulty turning visitors into paying customers due to
-                      poor navigation, unclear CTAs, and slow load times.
-                    </p>
-                  </li>
-                  <li>
-                    <strong>Weak Online Presence:</strong>
-                    <p className="mt-1 lg:text-[20px]">
-                      Limited visibility on search engines and inconsistent
-                      content updates made it hard for customers to find
-                      products.
-                    </p>
-                  </li>
-                  <li>
-                    <strong>Poor Social Media Engagement:</strong>
-                    <p className="mt-1 lg:text-[20px]">
-                      Irregular posting, lack of visually appealing content, and
-                      absence of strategy led to low interaction and minimal
-                      brand awareness.
-                    </p>
-                  </li>
-                </ol>
-              </div>
-              <div className="w-full lg:w-2/5"></div>
-            </div>
-
-            {/* Solutions */}
-            <div className="flex flex-col lg:flex-row gap-6">
-              <div className="w-full lg:w-3/5">
-                <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold mb-6">
-                  Solutions
-                </h2>
-                <ol className="list-decimal list-outside pl-6 space-y-4 text-sm sm:text-base lg:text-[24px]">
-                  <li>
-                    <strong>SEO Optimization:</strong>
-                    <p className="mt-1 lg:text-[20px]">
-                      Revamped website content and structure, performed SEO
-                      audit, optimized metadata and product descriptions,
-                      implemented internal linking.
-                    </p>
-                  </li>
-                  <li>
-                    <strong>Content Marketing:</strong>
-                    <p className="mt-1 lg:text-[20px]">
-                      Launched fashion blog with SEO optimized content, promoted
-                      via newsletters to drive repeat traffic.
-                    </p>
-                  </li>
-                  <li>
-                    <strong>Social Media Campaigns:</strong>
-                    <p className="mt-1 lg:text-[20px]">
-                      Created visually compelling ads, scheduled posts and
-                      stories, partnered with influencers to broaden reach.
-                    </p>
-                  </li>
-                </ol>
-              </div>
-              <div className="w-full lg:w-2/5"></div>
-            </div>
+            </section>
 
             {/* New Custom Image Section under Solutions */}
             <section className="my-10 flex flex-col gap-6">
@@ -445,7 +466,7 @@ export const OurWork = () => {
                 </ul>
               </div>
             </section>
-            {/* ------------------- Meet Our Team Section ------------------- */}
+            {/* Meet Our Team Section */}
             <section className="my-20 text-center">
               {/* Section Heading */}
               <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold mb-10">
