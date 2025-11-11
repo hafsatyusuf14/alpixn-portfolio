@@ -5,7 +5,7 @@ import consultation from "../../../public/images/works/consultation.webp";
 export const Consultation = () => {
   return (
     <section className="w-full bg-[#00152b] ">
-      <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10">
+      <div className=" mx-auto flex flex-col lg:flex-row items-center px-4 lg:items-start gap-10">
         {/* Left side */}
         <div
           className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left gap-5 

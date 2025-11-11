@@ -27,7 +27,7 @@ export const Card = ({ image, title, subtitle, className }: CardProps) => {
       </div>
 
       {/* Title & Subtitle */}
-      <div className="flex flex-col flex-1 justify-center mx-2.5 sm:py-6 md:my-0">
+      <div className="flex flex-col flex-1 justify-center py-6 mx-2.5 sm:py-6 md:my-0">
         <div className="text-white flex flex-col justify-center">
           <h3 className="font-medium mb-2 text-[16px] sm:text-[16px] md:text-[18px] lg:text-[24px] truncate">
             {title}
