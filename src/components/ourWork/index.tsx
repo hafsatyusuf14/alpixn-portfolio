@@ -27,12 +27,37 @@ export const OurWork = () => {
         // Section 1: Grid
         <motion.section
           key="grid"
-          className="my-6 mx-[50px]"
+          className="py-6 px-[50px] mb-10 bg-[#00152B] text-white"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.5 }}
         >
+          {/* Header Row */}
+          <div className="flex flex-col lg:flex-row justify-between items-center mb-10 gap-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold">
+              Showcasing Our Work
+            </h2>
+
+            {/* Right Search + Emoji */}
+            <div className="flex items-center gap-2 w-full lg:w-auto">
+              {/* Search Input */}
+              <div className="flex items-center border-[0.7px] border-[#389EFF] rounded-[10px] px-4 py-2 w-full lg:w-[280px]">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  className="bg-transparent outline-none flex-1 text-white font-normal lg:text-[16px]"
+                />
+              </div>
+
+              {/* Emoji Box */}
+              <div className="border border-[#389EFF] rounded-[10px] px-3 py-2 text-xl">
+                🔍
+              </div>
+            </div>
+          </div>
+
+          {/* Grid of Works */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {works.slice(0, 3).map((work) => (
               <motion.div
@@ -95,7 +120,7 @@ export const OurWork = () => {
         // Section 2: Detail View
         <motion.section
           key="detail"
-          className="my-6 mx-[50px] text-white bg-[#0b0b0b] rounded-lg"
+          className="py-6 px-[50px] text-white bg-[#00152B] rounded-lg"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
@@ -152,10 +177,12 @@ export const OurWork = () => {
                 <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold">
                   Objectives
                 </h2>
-                <p className="text-sm sm:text-base lg:text-[20px] font-normal">
-                  Boost Trendy Apparel Co.’s digital performance and online
-                  visibility. Attract qualified visitors, improve conversion,
-                  and establish a stronger social presence.
+                <p className="text-sm sm:text-base lg:text-[20px] font-normal lg:my-6">
+                  The primary focus was to boost Trendy Apparel Co.’s digital
+                  performance and online visibility. The goal was to attract
+                  more qualified visitors, improve conversion efficiency, and
+                  establish a stronger social presence to drive brand loyalty
+                  and sales growth.
                 </p>
                 <ul className="list-disc list-outside pl-5 space-y-2 text-lg lg:text-[20px]">
                   <li>
@@ -168,20 +195,73 @@ export const OurWork = () => {
                   <li>Strengthen customer engagement consistently.</li>
                 </ul>
               </div>
-              <div className="relative w-full lg:w-2/5 h-[250px] sm:h-[400px] lg:h-[555px] rounded-3xl overflow-hidden lg:sticky lg:top-20">
-                <Image
-                  src={selectedWork.image}
-                  alt={selectedWork.title}
-                  fill
-                  className="object-cover rounded-lg"
-                />
+              <div className="w-full lg:w-2/5 bg-linear-to-b from-[#002348] via-[#00141F] to-[#002348] border border-[#2a3f57] rounded-[10px] px-6 py-7 text-white shadow-[0_0_20px_rgba(56,158,255,0.25)] lg:sticky lg:top-20">
+                <h3 className="text-xl font-semibold mb-3">
+                  About The Project
+                </h3>
+
+                {/* Divider line */}
+                <div className="h-px bg-[#2a3f57] mb-4"></div>
+
+                {/* Industry */}
+                <p className="text-base mb-4">
+                  <span className="font-semibold lg:text-[16px]">
+                    Industry:
+                  </span>
+                  <br />
+                  <span className="lg:text-16px] font-normal">
+                    {" "}
+                    Fashion &amp; E-Commerce
+                  </span>
+                </p>
+
+                {/* Services Provided */}
+                <p className="font-semibold lg:text-[16px] mb-2">
+                  Services Provided:
+                </p>
+                <div className="flex flex-wrap gap-4 mb-6">
+                  {[
+                    "UI/UX Design",
+                    "Social Media Strategy",
+                    "Website Redesign",
+                    "Conversion Optimization",
+                  ].map((service, i) => (
+                    <div
+                      key={i}
+                      className="border border-[#2a3f57] rounded-lg p-3 text-sm lg:text-[16px]"
+                    >
+                      {service}
+                    </div>
+                  ))}
+                </div>
+
+                {/* Technologies Used */}
+                <p className="font-semibold lg:text-[16px] mb-2">
+                  Technologies Used:
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  {[
+                    "Meta Business Suite",
+                    "Google Analytics",
+                    "Figma",
+                    "Webflow",
+                    "Adobe Illustrator",
+                  ].map((tech, i) => (
+                    <div
+                      key={i}
+                      className="border border-[#2a3f57] rounded-lg p-3 lg:text-[16px] text-sm"
+                    >
+                      {tech}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
             {/* Problems */}
             <div className="flex flex-col lg:flex-row gap-6">
               <div className="w-full lg:w-3/5">
-                <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold mb-2">
+                <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold mb-6">
                   Problems
                 </h2>
                 <ol className="list-decimal list-inside space-y-4 text-sm sm:text-base lg:text-[20px]">
@@ -301,30 +381,30 @@ export const OurWork = () => {
               {/* Right Side */}
               <div className="w-full lg:w-2/5 flex flex-col justify-start">
                 {/* Top Numbers with Labels */}
-                <div className="flex justify-between text-center mb-6">
+                <div className="flex justify-between lg:gap-2 text-center mb-6">
                   {/* Left Metric */}
                   <div>
-                    <p className="text-[#389EFF] font-bold text-[40px] sm:text-[50px] lg:text-[60px] leading-none">
+                    <p className="text-[#389EFF] font-semibold text-[40px] sm:text-[50px] lg:text-[40px] leading-none">
                       71.4%
                     </p>
-                    <p className="text-gray-300 text-sm sm:text-base lg:text-[18px] mt-1">
+                    <p className="text-gray-300 text-sm sm:text-base lg:text-[20px] mt-1">
                       Conversion Increase
                     </p>
                   </div>
 
                   {/* Right Metric */}
                   <div>
-                    <p className="text-[#389EFF] font-bold text-[40px] sm:text-[50px] lg:text-[60px] leading-none">
+                    <p className="text-[#389EFF] font-semibold text-[40px] sm:text-[50px] lg:text-[40px] leading-none">
                       342.4%
                     </p>
-                    <p className="text-gray-300 text-sm sm:text-base lg:text-[18px] mt-1">
+                    <p className="text-gray-300 text-sm sm:text-base lg:text-[20px] mt-1">
                       Revenue Increase
                     </p>
                   </div>
                 </div>
 
                 {/* Bulleted Results */}
-                <ul className="list-disc list-outside pl-5 space-y-2 text-gray-300 text-sm sm:text-base lg:text-[18px]">
+                <ul className="list-disc list-outside pl-5 space-y-2 text-gray-300 text-sm sm:text-base lg:text-[20px] font-normal">
                   <li>
                     Within five months, website traffic surged by 60%, with a
                     significant drop in bounce rates.

@@ -7,7 +7,7 @@
 html,
 body {
   font-family: "Manrope", sans-serif;
-  @apply bg-[#00070E] text-white;
+  @apply bg-[#0b0b0b] text-white;
   margin: 0 auto;
   scroll-behavior: smooth;
   overscroll-behavior: none;
