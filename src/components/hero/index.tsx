@@ -9,11 +9,11 @@ export const Hero = () => {
         text-white gap-5
       "
     >
-      <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-[48px] font-bold mb-5">
+      <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-[48px] font-bold mb-5 ">
         Proven Results And Impacts
       </h1>
 
-      <p className="max-w-2xl text-[16px] sm:text-[18px] md:text-[19px] lg:text-[20px] font-medium text-gray-100 leading-relaxed">
+      <p className="max-w-2xl lg:w-[700px] text-[16px] sm:text-[18px] md:text-[19px] lg:text-[20px] font-medium text-gray-100 leading-relaxed">
         See how our innovative strategies have helped businesses thrive through
         our portfolio of successful projects and case studies.
       </p>

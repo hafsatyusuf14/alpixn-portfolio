@@ -44,7 +44,7 @@ export const OurWork = () => {
             </h2>
 
             {/* Right Search + Emoji */}
-            <div className="flex items-center gap-2 w-full lg:w-auto">
+            <div className="flex items-center justify-center gap-2 w-full lg:w-auto">
               {/* Search Input */}
               <div className="flex items-center border-[0.7px] gap-2 border-[#389EFF] rounded-[10px] px-6 py-4 w-full lg:w-[280px]">
                 <Image src="/icons/search.svg" alt="" height={18} width={18} />
@@ -56,7 +56,7 @@ export const OurWork = () => {
               </div>
 
               {/* Emoji Box */}
-              <div className="border border-[#389EFF] rounded-[10px] p-5 text-xl">
+              <div className=" border-[#389EFF] border-[0.7px] rounded-[10px] p-5 text-xl">
                 <Image
                   src="/icons/group.svg"
                   alt="group"
