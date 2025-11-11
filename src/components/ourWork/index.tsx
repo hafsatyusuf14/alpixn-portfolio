@@ -452,13 +452,13 @@ export const OurWork = () => {
                   </p>
                   <div className="text-xl flex gap-2">
                     <Image
-                      src="/icons/instagram.svg"
+                      src="/icons/insta.svg"
                       alt="instagram"
                       height={30}
                       width={30}
                     />
                     <Image
-                      src="/icons/linkedin.svg"
+                      src="/icons/link.svg"
                       alt="instagram"
                       height={30}
                       width={30}
