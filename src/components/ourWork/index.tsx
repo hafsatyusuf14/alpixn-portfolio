@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
 import { Card } from "../card";
 import { works } from "@/data/works";
 import Image from "next/image";
@@ -18,13 +18,27 @@ export const OurWork = () => {
     (typeof works)[number] | null
   >(null);
   const ourWorkRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
-    if (selectedWork && ourWorkRef.current) {
-      ourWorkRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  }, [selectedWork]);
+    if (!selectedWork) return;
 
+    let cancelled = false;
+
+    const tryScroll = () => {
+      if (cancelled) return;
+      const el = ourWorkRef.current;
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else {
+        requestAnimationFrame(tryScroll);
+      }
+    };
+
+    requestAnimationFrame(tryScroll);
+
+    return () => {
+      cancelled = true;
+    };
+  }, [selectedWork]);
   return (
     <AnimatePresence mode="wait">
       {!selectedWork ? (
