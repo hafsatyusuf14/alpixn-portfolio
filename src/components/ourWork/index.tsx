@@ -436,7 +436,7 @@ export const OurWork = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-items-center">
                 {/* Team Member 1 */}
                 <div className="flex flex-col items-center">
-                  <div className="relative w-[180px] h-[180px] rounded-full overflow-hidden mb-4">
+                  <div className="relative w-[219px] h-[219px] rounded-full overflow-hidden mb-4">
                     <Image
                       src={Amith}
                       alt="Team Member 1"
@@ -444,18 +444,31 @@ export const OurWork = () => {
                       className="object-cover rounded-full"
                     />
                   </div>
-                  <h3 className="text-lg sm:text-xl font-semibold">
+                  <h3 className="text-lg sm:text-xl font-medium lg:text-[26px]">
                     Amith Jay
                   </h3>
-                  <p className="text-gray-400 text-sm sm:text-base mb-2">
+                  <p className="text-gray-400 text-sm sm:text-base lg:text-[20px] mb-2">
                     UI/UX Designer (Lead)
                   </p>
-                  <p className="text-xl">💡✨</p>
+                  <div className="text-xl flex gap-2">
+                    <Image
+                      src="/icons/instagram.svg"
+                      alt="instagram"
+                      height={30}
+                      width={30}
+                    />
+                    <Image
+                      src="/icons/linkedin.svg"
+                      alt="instagram"
+                      height={30}
+                      width={30}
+                    />
+                  </div>
                 </div>
 
                 {/* Team Member 2 */}
                 <div className="flex flex-col items-center">
-                  <div className="relative w-[180px] h-[180px] rounded-full overflow-hidden mb-4">
+                  <div className="relative w-[219px] h-[219px] rounded-full overflow-hidden mb-4">
                     <Image
                       src={karan}
                       alt="Team Member 2"
@@ -463,18 +476,31 @@ export const OurWork = () => {
                       className="object-cover rounded-full"
                     />
                   </div>
-                  <h3 className="text-lg sm:text-xl font-semibold">
+                  <h3 className="text-lg sm:text-xl font-medium lg:text-[26px]">
                     Karan Sharma
                   </h3>
-                  <p className="text-gray-400 text-sm sm:text-base mb-2">
+                  <p className="text-gray-400 text-sm sm:text-base lg:text-[20px] mb-2">
                     Digital Marketing Analyst
                   </p>
-                  <p className="text-xl">📈🔥</p>
+                  <div className="text-xl flex gap-2">
+                    <Image
+                      src="/icons/instagram.svg"
+                      alt="instagram"
+                      height={30}
+                      width={30}
+                    />
+                    <Image
+                      src="/icons/linkedin.svg"
+                      alt="instagram"
+                      height={30}
+                      width={30}
+                    />
+                  </div>
                 </div>
 
                 {/* Team Member 3 */}
                 <div className="flex flex-col items-center">
-                  <div className="relative w-[180px] h-[180px] rounded-full overflow-hidden mb-4">
+                  <div className="relative w-[219px] h-[219px] rounded-full overflow-hidden mb-4">
                     <Image
                       src={anna}
                       alt="Team Member 3"
@@ -482,18 +508,31 @@ export const OurWork = () => {
                       className="object-cover rounded-full"
                     />
                   </div>
-                  <h3 className="text-lg sm:text-xl font-semibold">
+                  <h3 className="text-lg sm:text-xl font-medium lg:text-[26px]">
                     Anna Bhattacharya
                   </h3>
-                  <p className="text-gray-400 text-sm sm:text-base mb-2">
+                  <p className="text-gray-400 text-sm sm:text-base lg:text-[20px] mb-2">
                     Content Strategist
                   </p>
-                  <p className="text-xl">💻🎨</p>
+                  <div className="text-xl flex gap-2">
+                    <Image
+                      src="/icons/instagram.svg"
+                      alt="instagram"
+                      height={30}
+                      width={30}
+                    />
+                    <Image
+                      src="/icons/linkedin.svg"
+                      alt="instagram"
+                      height={30}
+                      width={30}
+                    />
+                  </div>
                 </div>
 
                 {/* Team Member 4 */}
                 <div className="flex flex-col items-center">
-                  <div className="relative w-[180px] h-[180px] rounded-full overflow-hidden mb-4">
+                  <div className="relative w-[219px] h-[219px] rounded-full overflow-hidden mb-4">
                     <Image
                       src={sneh}
                       alt="Team Member 4"
@@ -501,13 +540,26 @@ export const OurWork = () => {
                       className="object-cover rounded-full"
                     />
                   </div>
-                  <h3 className="text-lg sm:text-xl font-semibold">
+                  <h3 className="text-lg sm:text-xl font-medium lg:text-[26px]">
                     Snehashri S
                   </h3>
-                  <p className="text-gray-400 text-sm sm:text-base mb-2">
+                  <p className="text-gray-400 text-sm sm:text-base lg:text-[20px] mb-2">
                     Social Media Manager{" "}
                   </p>
-                  <p className="text-xl">🎨💭</p>
+                  <div className="text-xl flex gap-2">
+                    <Image
+                      src="/icons/instagram.svg"
+                      alt="instagram"
+                      height={30}
+                      width={30}
+                    />
+                    <Image
+                      src="/icons/linkedin.svg"
+                      alt="instagram"
+                      height={30}
+                      width={30}
+                    />
+                  </div>
                 </div>
               </div>
             </section>
