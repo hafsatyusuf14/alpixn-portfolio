@@ -45,7 +45,7 @@ export const OurWork = () => {
         // Section 1: Grid
         <motion.section
           key="grid"
-          className="py-6 px-[50px] mb-10 bg-[#00152B] text-white"
+          className="py-3 px-[25px] lg:py-6 lg:px-[50px] md:py-6 md:px-[50px]sm:px-3 sm:py-[25px] mb-10 bg-[#00152B] text-white"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
@@ -144,7 +144,7 @@ export const OurWork = () => {
         // Section 2: Detail View
         <motion.section
           key="detail"
-          className="py-6 px-[50px] text-white bg-[#00152B] rounded-lg"
+          className="py-3 px-[25px] lg:py-6 lg:px-[50px] md:py-6 md:px-[50px]sm:px-3 sm:py-[25px] text-white bg-[#00152B] rounded-lg"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
