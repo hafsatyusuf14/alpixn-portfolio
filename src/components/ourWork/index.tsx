@@ -53,7 +53,7 @@ export const OurWork = () => {
         >
           {/* Header Row */}
           <div className="flex flex-col lg:flex-row justify-between items-center mb-10 gap-4">
-            <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold">
+            <h2 className="text-2xl sm:text-2xl lg:text-[40px] font-semibold">
               Showcasing Our Work
             </h2>
 
@@ -177,7 +177,7 @@ export const OurWork = () => {
                 <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold">
                   Details
                 </h2>
-                <p className="text-sm sm:text-base lg:text-[20px] font-normal">
+                <p className="text-lg sm:text-lg lg:text-[20px] font-normal">
                   Transforming Sales for Trendy Apparel Co. Client Overview:
                   Trendy Apparel Co., a budding online fashion retailer,
                   specializes in the latest trends targeting young adults.
@@ -217,7 +217,7 @@ export const OurWork = () => {
                   <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold">
                     Objectives
                   </h2>
-                  <p className="text-sm sm:text-base lg:text-[20px] font-normal lg:my-6">
+                  <p className="text-lg sm:text-lg lg:text-[20px] font-normal lg:my-6">
                     The primary focus was to boost Trendy Apparel Co.’s digital
                     performance and online visibility. The goal was to attract
                     more qualified visitors, improve conversion efficiency, and
@@ -248,7 +248,7 @@ export const OurWork = () => {
                   <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold mb-6">
                     Problems
                   </h2>
-                  <ol className="list-decimal list-outside pl-6 space-y-4 text-sm sm:text-base lg:text-[24px]">
+                  <ol className="list-decimal list-outside pl-6 space-y-4 text-lg sm:text-lg lg:text-[24px]">
                     <li>
                       <strong>Low Conversion & High Bounce Rate:</strong>
                       <p className="mt-1 lg:text-[20px]">
@@ -287,7 +287,7 @@ export const OurWork = () => {
                   <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold mb-6">
                     Solutions
                   </h2>
-                  <ol className="list-decimal list-outside pl-6 space-y-4 text-sm sm:text-base lg:text-[24px]">
+                  <ol className="list-decimal list-outside pl-6 space-y-4 text-lg sm:text-lg lg:text-[24px]">
                     <li>
                       <strong>SEO Optimization:</strong>
                       <p className="mt-1 lg:text-[20px]">
@@ -432,7 +432,7 @@ export const OurWork = () => {
                     <p className="text-[#389EFF] font-semibold text-[40px] sm:text-[50px] lg:text-[40px] leading-none">
                       71.4%
                     </p>
-                    <p className="text-gray-300 text-sm sm:text-base lg:text-[20px] mt-1">
+                    <p className="text-gray-300 text-lg sm:text-lg lg:text-[20px] mt-1">
                       Conversion Increase
                     </p>
                   </div>
@@ -442,14 +442,14 @@ export const OurWork = () => {
                     <p className="text-[#389EFF] font-semibold text-[40px] sm:text-[50px] lg:text-[40px] leading-none">
                       342.4%
                     </p>
-                    <p className="text-gray-300 text-sm sm:text-base lg:text-[20px] mt-1">
+                    <p className="text-gray-300 text-lg sm:text-lg lg:text-[20px] mt-1">
                       Revenue Increase
                     </p>
                   </div>
                 </div>
 
                 {/* Bulleted Results */}
-                <ul className="list-disc list-outside pl-5 space-y-2 text-gray-300 text-sm sm:text-base lg:text-[20px] font-normal">
+                <ul className="list-disc list-outside pl-5 space-y-2 text-gray-300 text-lg sm:text-lg lg:text-[20px] font-normal">
                   <li>
                     Within five months, website traffic surged by 60%, with a
                     significant drop in bounce rates.

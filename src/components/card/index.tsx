@@ -29,13 +29,13 @@ export const Card = ({ image, title, subtitle, className }: CardProps) => {
       {/* Title & Subtitle */}
       <div className="flex flex-col flex-1 justify-center py-6 mx-2.5 sm:py-6 md:my-0">
         <div className="text-white flex flex-col justify-center">
-          <h3 className="font-medium mb-2 text-[16px] sm:text-[16px] md:text-[18px] lg:text-[24px] truncate">
+          <h3 className="font-medium mb-2 text-lg sm:text-lg md:text-[18px] lg:text-[24px] truncate">
             {title}
           </h3>
 
           <p
             className="
-              text-gray-400 font-normal text-[8px] sm:text-[8px] md:text-[10px] lg:text-[13px]
+             font-normal text-xs sm:text-xs md:text-[12px] lg:text-[13px]
               overflow-hidden text-ellipsis
               [display:-webkit-box] [-webkit-line-clamp:3] [-webkit-box-orient:vertical]
               min-h-[3.9em] leading-[1.3em]
