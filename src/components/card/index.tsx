@@ -33,14 +33,7 @@ export const Card = ({ image, title, subtitle, className }: CardProps) => {
             {title}
           </h3>
 
-          <p
-            className="
-             font-normal text-xs sm:text-xs md:text-[12px] lg:text-[13px]
-              overflow-hidden text-ellipsis
-              [display:-webkit-box] [-webkit-line-clamp:3] [-webkit-box-orient:vertical]
-              min-h-[3.9em] leading-[1.3em]
-            "
-          >
+          <p className="font-normal text-xs sm:text-xs md:text-[12px] lg:text-[13px] overflow-hidden text-ellipsis min-h-[3.9em] leading-[1.3em] [display:-webkit-box] [-webkit-line-clamp:3] [-webkit-box-orient:vertical]">
             {subtitle}
           </p>
         </div>
